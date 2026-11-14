@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { addTodo } from "./actions";
 import { TodoList } from "./todo-list";
+import "../styles/style.css";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
           className="border p-2 flex-1 rounded"
           required
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 rounded">
+        <button
+          type="submit"
+          className="bg-blue-500 text-white px-4 rounded cursor-pointer"
+        >
           Добавить
         </button>
       </form>
